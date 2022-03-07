@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sidebar test" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/script.js" defer></script>
+  </head>
+  <body>
+    <aside class="sidebar fechado" id="sidebar">
+      <div class="side">
+        <div>
+          <div class="logo">
+            <span> Dev </span>
+            <button id="btn-menu">
+              <img src="./src/img/menu.svg" alt="grid" />
+            </button>
+          </div>
+          <div class="items fechado" id="items">
+            <ul class="list">
+              <li>
+                <img
+                  src="./src/img/search.svg"
+                  alt="search"
+                  class="search open"
+                  id="search"
+                />
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="input fechado"
+                  id="input"
+                />
+              </li>
+              <li>
+                <a href="#" class="link fechado">
+                  <img src="./src/img/grid.svg" alt="grid" class="icon grid" />
+                  <span class="off-link fechado">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="link fechado">
+                  <img src="./src/img/user.svg" alt="user" class="icon user" />
+                  <span class="off-link fechado">Profile</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="link fechado">
+                  <img
+                    src="./src/img/settings.svg"
+                    alt="settings"
+                    class="icon settings"
+                  />
+                  <span class="off-link fechado">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="logout">
+          <div class="user">
+            <div class="foto"></div>
+            <span class="user-dados">
+              <span class="name">User Name</span>
+              <span class="design">Design</span>
+            </span>
+          </div>
+          <img src="./src/img/log-out.svg" alt="logout" />
+        </div>
+      </div>
+    </aside>
+    <section>
+      <h1>Dashboard</h1>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*  
+      Fontes
+      font-family: 'Poppins', sans-serif;
+*/
+
+:root {
+  --dark-purple: #10111B;
+  --light-purple: #4F5488;
+  --purple: #1B1E39;
+  --background-site: #D8D3EA;
+  --light-grey-purple: #706999;
+  --font: #fff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-site);
+}
+.sidebar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transition: all 300ms;
+
+}
+.side {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  background-color: var(--dark-purple);
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  color: var(--font);
+  font-size: 1.25rem;
+  font-weight: 300;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.2rem;
+}
+
+.logo button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.items {
+  position: relative;
+  transition: all 300ms;
+  left: 0px;
+}
+.items .list{
+  list-style: none;
+  margin: .8rem;
+  margin-left: .8rem;
+}
+.items .list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+  position: relative;
+}
+
+.list li .link {
+  color: var(--font);
+  text-decoration: none;
+}
+.items .list li a{
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.items .list li input {
+  width: 100%;
+  height: 51px;
+  background-color: var(--purple);
+  outline: none;
+  border: none;
+  color: var(--font);
+  font-weight: 500;
+  border-radius: 10px;
+  padding-left: 50px;
+  transition: all 80ms;
+
+}
+
+.items .list li input::placeholder { 
+  color: var(--font);
+  font-size: 1rem;
+}
+
+.items .list li .search{
+  padding: 7px;
+  background-color: var(--purple);
+  position: absolute;
+  left: center;
+  margin-left: .5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 100ms;
+}
+
+.items .list li .icon {
+  margin-left: .8rem;
+}
+
+.logout {
+  display: flex;
+  color: var(--font);
+  align-items: center;
+  gap: .8rem;
+  justify-content: space-around;
+  background-color: var(--purple);
+  height: 4rem;
+}
+
+.logout .foto {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: var(--background-site);
+  margin-left: .8rem;
+}
+
+.logout .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .8rem;
+}
+
+.logout .user .user-dados {
+   display: flex;
+   flex-direction: column;
+}
+
+.logout .user .design {
+  font-size: 10px;
+}
+.logout img {
+  margin-bottom: .5rem;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  max-width: 960px;
+  width: 100%;
+  height: 100vh;
+  margin-left: 250px;
+}
+
+section h1 {
+  margin: 1rem;
+  color: var(--dark-purple);
+  font-size: 3rem;
+}
+
+
+/*
+
+      SIDEBAR CLOSED
+
+*/
+
+
+.sidebar.fechado {
+  left: -12rem;
+}
+
+.items.fechado {
+  left: 11rem;
+}
+
+.input.fechado {
+  opacity: 0;
+  pointer-events: none;
+}
+
+li .off-link.fechado {
+  display: none;
+}
+
+.search.open {
+  pointer-events: none;
+}
